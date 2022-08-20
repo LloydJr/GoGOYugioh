@@ -73,4 +73,5 @@ Resources:
 https://react-spring.dev/
 https://fontawesome.com
 https://tailwindcss.com
-
+https://upmostly.com/tutorials/using-axios-with-react-api-requests?gclid=Cj0KCQjwjIKYBhC6ARIsAGEds-LrU4tGR-wjo5Nwusvjyfy74m8FojR4LPF9rTDaDuP7VyZJFg5PCTcaAo7GEALw_wcB
+https://mdbootstrap.com/docs/react/content-styles/icons/
