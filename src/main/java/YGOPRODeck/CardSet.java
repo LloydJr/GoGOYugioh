@@ -3,14 +3,26 @@ package YGOPRODeck;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.Generated;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Id;
+import javax.persistence.Column;
 
 @Generated("jsonschema2pojo")
+@Entity
+@Table(name = "cardSet")
 public class CardSet {
 
+    @Id
+    @Column(name = "setName", unique = true)
     private String setName;
+    @Column(name = "setCode", unique = true)
     private String setCode;
+    @Column(name = "setRarity", unique = true)
     private String setRarity;
+    @Column(name = "setRarityCode", unique = true)
     private String setRarityCode;
+    @Column(name = "setPrice", unique = true)
     private String setPrice;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 

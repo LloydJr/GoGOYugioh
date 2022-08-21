@@ -1,14 +1,29 @@
 package YGOPRODeck;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.Generated;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Id;
+import javax.persistence.Column;
+
+
+
 
 @Generated("jsonschema2pojo")
-public class CardImage {
+@Entity
+@Table(name = "cardImage")
+public class CardImage implements Serializable{
+    private static final long serialVersionUID = 1L;
 
+    @Id
+    @Column(name = "Id", nullable = false)
     private Integer id;
+    @Column(name = "imageUrl", unique = true)
     private String imageUrl;
+    @Column(name = "imageUrlSmall", unique = true)
     private String imageUrlSmall;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 

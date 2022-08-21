@@ -4,18 +4,35 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.annotation.Generated;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import javax.persistence.Id;
+import javax.persistence.Column;
 
 @Generated("jsonschema2pojo")
+@Entity
+@Table(name = "datum")
 public class Datum {
 
+    @Id
+    @Column(name = "Id", nullable = false)
     private Integer id;
+    @Column(name = "name", unique = true)
     private String name;
+    @Column(name = "type", unique = true)
     private String type;
+    @Column(name = "desciption", unique = true)
     private String desc;
+    @Column(name = "atk", nullable = false)
     private Integer atk;
+    @Column(name = "def", nullable = false)
     private Integer def;
+    @Column(name = "level", nullable = false)
     private Integer level;
+    @Column(name = "race", unique = true)
     private String race;
+    @Column(name = "attribute", unique = true)
     private String attribute;
     private List<CardSet> cardSets = null;
     private List<CardImage> cardImages = null;
