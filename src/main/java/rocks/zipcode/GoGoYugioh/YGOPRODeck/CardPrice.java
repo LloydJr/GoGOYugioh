@@ -1,4 +1,4 @@
-package YGOPRODeck;
+package rocks.zipcode.GoGoYugioh.YGOPRODeck;
 
 import java.io.Serializable;
 import java.util.HashMap;

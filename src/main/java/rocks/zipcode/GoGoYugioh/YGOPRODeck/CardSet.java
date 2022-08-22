@@ -1,5 +1,6 @@
-package YGOPRODeck;
+package rocks.zipcode.GoGoYugioh.YGOPRODeck;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.Generated;
@@ -11,7 +12,9 @@ import javax.persistence.Column;
 @Generated("jsonschema2pojo")
 @Entity
 @Table(name = "cardSet")
-public class CardSet {
+public class CardSet implements Serializable {
+    private static final long serialVersionUID = 3L;
+
 
     @Id
     @Column(name = "setName", unique = true)

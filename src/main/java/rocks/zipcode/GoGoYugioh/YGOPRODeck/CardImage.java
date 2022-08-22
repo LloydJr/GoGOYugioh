@@ -1,25 +1,27 @@
-package YGOPRODeck;
+package rocks.zipcode.GoGoYugioh.YGOPRODeck;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.Generated;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Id;
-import javax.persistence.Column;
-
-
+import javax.persistence.*;
 
 
 @Generated("jsonschema2pojo")
 @Entity
 @Table(name = "cardImage")
+@JsonIgnoreProperties(ignoreUnknown = true)
+
 public class CardImage implements Serializable{
     private static final long serialVersionUID = 1L;
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "Id", nullable = false)
+    @JsonProperty("Id")
     private Integer id;
     @Column(name = "imageUrl", unique = true)
     private String imageUrl;

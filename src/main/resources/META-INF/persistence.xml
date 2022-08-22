@@ -15,7 +15,7 @@
 
             <property name="javax.persistence.jdbc.drive" value="com.mysql.jdbc.Driver"/>
 
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/yugioh"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/yugioh"/>
 
             <property name="javax.persistence.jdbc.user" value="root"/>
 

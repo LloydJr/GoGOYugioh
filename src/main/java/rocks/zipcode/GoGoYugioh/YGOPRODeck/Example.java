@@ -1,12 +1,15 @@
-package YGOPRODeck;
+package rocks.zipcode.GoGoYugioh.YGOPRODeck;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.annotation.Generated;
 
 @Generated("jsonschema2pojo")
-public class Example {
+public class Example implements Serializable {
+    private static final long serialVersionUID = 5L;
+
 
     private List<Datum> data = null;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
