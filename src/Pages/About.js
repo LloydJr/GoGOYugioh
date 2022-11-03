@@ -4,10 +4,10 @@ function About() {
   return (
     <div>
       <p className="font-bold text-2xl mb-3">
-      About me
+      What is GogoYugioh?
       </p>
       <p className="mb-3">
-        This is the about me page.
+        Information
       </p>
       <p className="mb-3">
      GogoYugioh is a web application that lets the user search through an index of all the known Yugioh cards and display the prices for the card if it is in near mint condition.
